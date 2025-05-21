@@ -127,7 +127,7 @@ h4{
 }
 
 main{
-    background-image: url(/img/fondo_web.jpg);
+    background-image: url(MercadoFotografico/img/fondo_web.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     border-radius: 15px;
