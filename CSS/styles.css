@@ -2,8 +2,6 @@ html{
     font: size 16px;
 }
 
-
-
 header{
     display:flex;
     position:sticky;
@@ -103,7 +101,7 @@ h4{
     margin: 0;
     color:aliceblue;
     justify-content: center;
-     "Roboto", sans-serif;
+     font-family:"Roboto", sans-serif;
 }
 
 .nav-list li a {
@@ -127,11 +125,10 @@ h4{
 }
 
 main{
-    background-image: url('img/fondo_web.jpg'');
+    background-image: url('img/fondo_web.jpg');
     background-repeat:no-repeat;
     background-size: cover;
     border-radius: 15px;
-    
 }
 footer{
     align-items:center;
