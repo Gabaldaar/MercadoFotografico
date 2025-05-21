@@ -1,0 +1,175 @@
+html{
+    font: size 16px;
+}
+
+header{
+    display:flex;
+    position:sticky;
+    gap:10px;
+    top: 0;
+    flex-direction: column;
+    align-items: center-start;
+    padding: 10px;
+    width: 98vw; /* Hace que el ancho sea el 90% del viewport */
+    height: auto; /* Ajusta la altura según el contenido */
+    background: linear-gradient(to right, rgb(55, 58, 58), rgb(105, 105, 105));
+    border-radius: 15px;
+    box-shadow: 0px 7px 10px rgba(105, 105, 105, 0.5); 
+    gap: 15px;
+    font-family:  "Roboto", sans-serif;
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Ajusta la estructura */
+        justify-content: space-between; /* Distribuye mejor los elementos */
+        padding: 5px; /* Reduce el espaciado */
+        border-radius: 5px; /* Bordes menos pronunciados */
+    }
+}
+.header-top {
+    display: flex;
+    align-items:center; /* Asegura que el logo y los textos estén alineados horizontalmente */
+    justify-content:center; /* Centra todo */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+h1{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align:center;
+    margin: 1px;
+    font-size: 3rem;
+}
+
+h3{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align:center;
+    margin: 1px;
+    font-size: 1.6rem;
+}
+
+h4{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin-top: 1px; 
+    margin-bottom: 1px; 
+    font-size: 1.4rem;
+}
+
+
+.logo img {
+    width: 10vh; /* Ajusta el tamaño */
+    height: auto;
+    margin: 0px;
+    padding: 5px;
+    border-width: 5px;
+    border-style:inset;
+    border-color: aliceblue;
+    background-color:rgb(194, 192, 192);
+    border-radius: 15px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 0;
+    color:aliceblue;
+    justify-content: center;
+     font-family:"Roboto", sans-serif;
+}
+
+.nav-list li a {
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    color:aliceblue
+}
+
+
+.grilla{
+    display:grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.recuadro{
+    width: 50%;
+    height: 100px;
+    background-color: grey;
+    border: 3px solid;
+}
+
+main{
+    background-image: url('img/fondo_web.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+}
+footer{
+    align-items:center;
+
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 7px 10px rgba(105, 105, 105, 0.5);
+    background: linear-gradient(to right, rgb(55, 58, 58), rgb(105, 105, 105));
+    border-radius: 15px;
+}
+.pfooter{
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5px;
+
+}
+.iconos{
+    margin-bottom: 10px;
+    
+}
+
+.fa-instagram{
+    font-size: 30px;
+    color:aliceblue;
+    margin-right: 12px;
+    margin-left: 25px;
+    margin-bottom: 30;
+    
+}
+.fa-facebook-f{
+    font-size: 25px;
+    color:aliceblue;    
+    margin-right: 12px;
+}
+.fa-whatsapp{
+    font-size: 30px;
+    color:aliceblue;
+    margin-right: 12px;
+}
