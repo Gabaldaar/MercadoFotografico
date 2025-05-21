@@ -131,7 +131,7 @@ main{
     background-repeat:no-repeat;
     background-size: cover;
     border-radius: 15px;
-    min-height: 300px; /* O un valor adecuado */
+    
 }
 footer{
     align-items:center;
