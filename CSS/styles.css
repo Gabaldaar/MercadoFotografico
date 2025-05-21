@@ -127,11 +127,11 @@ h4{
 }
 
 main{
-    background-image: url('https://via.placeholder.com/800x600');
-    
+    background-image: url('https://dummyimage.com/800x600/000/fff');
     background-repeat:no-repeat;
     background-size: cover;
     border-radius: 15px;
+    min-height: 300px; /* O un valor adecuado */
 }
 footer{
     align-items:center;
