@@ -18,16 +18,10 @@ body {
     margin: 5px;
 }
 
-.header-content {
-    display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content:center; /* Logo a la izquierda */
-    width: 100%;
-    padding: 10px 10px;
-}
+
 
 .logo img {
-    width: 80px; /* Ajusta según sea necesario */
+    max-width: 80px; /* Ajusta según sea necesario */
     margin-right: 10px; /* Espacio entre logo y título */
     
 
@@ -35,6 +29,7 @@ body {
 
 .titulo h1, .titulo h3 {
     margin: 0;
+    
 }
 
 header{
@@ -55,16 +50,31 @@ header{
     
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: row; /* Ajusta la estructura */
-        justify-content: space-between; /* Distribuye mejor los elementos */
-        padding: 5px; /* Reduce el espaciado */
-        border-radius: 5px; /* Bordes menos pronunciados */
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Alinea verticalmente */
+    justify-content:center; /* Logo a la izquierda */
+    width: 100%;
+    padding: 10px 10px;
+}
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
     }
-    body { font-size: 12px;
-            grid-template-columns: 1fr;
 
+    .titulo h1 {
+        /*font-size: 20px;*/
+        font-size: 4vw;
+    }
+
+    .titulo h3 {
+        /*font-size: 16px;*/
+        font-size: 2.5vw;
+    }
+   
+    .nav-list {
+        flex-direction: column;
     }
 }
 
@@ -101,7 +111,8 @@ h4{
     text-align: center;
     margin-top: 1px; 
     margin-bottom: 1px; 
-    font-size: 1.4rem;
+    font-size: 2vw;
+    }
 }
 
 p {
@@ -109,11 +120,14 @@ p {
     font-size: 1rem; /* Ajusta el tamaño si es necesario */
     max-width: 600px; /* Limita el ancho para que el texto no se extienda demasiado */
     margin: 0 auto; /* Centra horizontalmente */
+   font-size: 1vw;
+    
 }
 
 
 .titulo {
     text-align: center;
+   
 }
 
 .nav {
@@ -130,6 +144,7 @@ nav ul{
 }
 .nav-list{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px; /* Espacio entre elementos */
     list-style: none; /* Elimina los estilos de lista */
     padding: 0;
@@ -137,7 +152,7 @@ nav ul{
     color:aliceblue;
     justify-content: center;
     font-family:"Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
 }
 
 .nav-list li a {
