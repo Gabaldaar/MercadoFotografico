@@ -76,6 +76,13 @@ header{
     .nav-list {
         flex-direction: column;
         font-size: 1.2vw;
+        gap: 5px;
+    }
+    .nav-list li a {
+        padding: 2px;
+        color:aliceblue;
+        margin: 3px;
+
     }
 }
 
@@ -112,7 +119,7 @@ h4{
     text-align: center;
     margin-top: 1px; 
     margin-bottom: 1px; 
-    font-size: 2vw;
+    font-size: 2.5vw;
     }
 h5{
    font-size: 1.5vw; 
@@ -162,7 +169,7 @@ nav ul{
 .nav-list li a {
     display: block;
     text-decoration: none; /* elimina el subrayado de los enlaces */
-    padding: 10px 15px;
+    padding: 10px;
     color:aliceblue;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
