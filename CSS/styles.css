@@ -114,14 +114,16 @@ h4{
     margin-bottom: 1px; 
     font-size: 2vw;
     }
-
+h5{
+   font-size: 1.5vw; 
+}
 
 p {
     text-align: center;
     font-size: 1rem; /* Ajusta el tamaño si es necesario */
     max-width: 600px; /* Limita el ancho para que el texto no se extienda demasiado */
     margin: 0 auto; /* Centra horizontalmente */
-   font-size: 1vw;
+   font-size: 1.2vw;
     
 }
 
