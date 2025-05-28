@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = Gabaldaar
+	email = gab.aldazabal@gmail.com
+[remote "MercadoFotografico"]
+	url = https://github.com/Gabaldaar/MercadoFotografico.git
+	fetch = +refs/heads/*:refs/remotes/MercadoFotografico/*
+[branch "main"]
+	vscode-merge-base = MercadoFotografico/main
+	vscode-merge-base = MercadoFotografico/main

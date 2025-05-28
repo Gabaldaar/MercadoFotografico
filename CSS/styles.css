@@ -1,0 +1,458 @@
+
+/*Sincro con GitHub*/
+/*Sincro con GitHub*/
+body {
+    font-size: 14px; 
+    font-family: "Roboto", sans-serif;
+    color: black;
+    margin: 1px;
+}
+
+.productos {
+    padding-top: 1%;
+    display: flex;
+  
+}
+
+.productos .row {
+    justify-content: center; /* Centra las columnas dentro de la fila */
+}
+
+.productos .col {
+    display: flex;
+    justify-content: center; /* Centra la card dentro de la columna */
+}
+
+
+.logo img {
+    max-width: 80px; /* Ajusta según sea necesario */
+    margin-right: 10px; /* Espacio entre logo y título */
+    
+
+}
+
+.titulo h1, .titulo h3 {
+    margin: 0;
+    
+}
+
+header{
+    display:flex;
+    position:sticky;
+    top: 0px;
+    flex-direction: column;
+    align-items:center;
+    
+    justify-content: space-between;
+    padding: 0px;
+    width: 100vw; /* Hace que el ancho sea el 90% del viewport */
+    background: linear-gradient(to right, rgb(55, 58, 58), rgb(105, 105, 105));
+
+    box-shadow: 0px 7px 10px rgba(5, 5, 5, 0.5); 
+    font-family:  "Roboto", sans-serif;
+    z-index: 10;
+    
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Alinea verticalmente */
+    justify-content:center; /* Logo a la izquierda */
+    width: 100%;
+    padding: 10px 10px;
+    
+}
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .titulo h1 {
+        /*font-size: 20px;*/
+        font-size: 6vw;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+    }
+
+    .item {
+        width: 90%; /* Hace que los elementos ocupen casi toda la pantalla */
+        
+    }
+   
+    .nav-list {
+        flex-direction: column;
+        font-size: 1.2vw;
+        gap: 0px;
+        height: fit-content;
+    }
+    .nav-list li a {
+        padding: 0px;
+        color:aliceblue;
+        margin: 0px;
+        height: fit-content;
+        font-size: 14px;
+        line-height: 0px
+
+    }
+    .card{
+        width: 90%; /* Que no queden muy pequeñas */
+        max-width: 250px; /* Pero evita que sean demasiado anchas */
+    }
+    .video-container {
+        max-width: 320px; /* Reduce el tamaño del video en móviles */
+    }
+}
+
+.video-container {
+    display:flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center;
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 560px; /* Máximo tamaño en pantallas grandes */
+    aspect-ratio: 16 / 9; /* Mantiene proporción del video */
+   
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    
+}
+
+h1{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align:center;
+    margin: 1px;
+    font-size: 2.2rem;
+}
+
+h3{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align:center;
+    margin: 1px;
+    font-size:clamp(12px, 4vw,20px);
+    /*font-size: 1.4rem;*/
+}
+
+h4{
+    color:white;
+    font-family:  "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin-top: 1px; 
+    margin-bottom: 1px; 
+    font-size:clamp(14px, 4vw,25px);
+    
+    }
+h5{
+   font-size:clamp(15px, 4vw,20px);
+}
+
+p {
+    text-align: center;
+    font-size: 1rem; /* Ajusta el tamaño si es necesario */
+    max-width: 600px; /* Limita el ancho para que el texto no se extienda demasiado */
+    margin: 0 auto; /* Centra horizontalmente */
+    font-size:clamp(10px, 4vw,18px);
+    
+}
+
+
+.titulo {
+    text-align: center;
+   
+}
+
+.nav {
+    height:auto;
+    margin-right: 3%;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre elementos */
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0;
+    margin: 0;
+    color:aliceblue;
+    justify-content: center;
+    font-family:"Roboto", sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.nav-list li a {
+    display: block;
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    padding: 8px 12px;
+    color:aliceblue;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+.nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente al pasar el mouse */
+    color: #FFD700; /* Cambia a un tono dorado */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+.nav-list a.active {
+    color: #ffcc00; /* Cambia el color del texto */
+    font-weight: bold; /* Opcional: resaltar el enlace */
+}
+
+.recuadro{
+    width: 50%;
+    height: 100px;
+    background-color: grey;
+    border: 3px solid;
+}
+
+main{
+    background-image: url(../img/fondo_web.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    align-items: center;
+    width: 100vw;
+}
+
+.contenedor{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:15px;
+    height: auto;
+}
+
+.item{
+    border: 2px solid rgb(180, 179, 179);
+    padding: 10px;
+    height:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    transition: transform 0.6s ease, color 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+
+}
+.item:hover{
+    border-color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+    transform: scale(1.05);
+}
+
+footer{
+    align-items:center;
+    width: 100vw;
+
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 7px 10px rgba(105, 105, 105, 0.5);
+    background: linear-gradient(to right, rgb(55, 58, 58), rgb(105, 105, 105));
+    
+}
+.pfooter{
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5px;
+
+
+}
+.iconos{
+    margin-bottom: 10px;
+    
+}
+
+.fa-instagram{
+    font-size: 30px;
+    color:aliceblue;
+    margin-right: 12px;
+    margin-left: 25px;
+    margin-bottom: 30;
+    
+}
+.fa-facebook-f{
+    font-size: 25px;
+    color:aliceblue;    
+    margin-right: 12px;
+}
+.fa-whatsapp{
+    font-size: 30px;
+    color:aliceblue;
+    margin-right: 12px;
+}
+.formcontact{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.iconos a {
+    display: inline-block;
+    transition: transform 0.6s ease, color 0.3s ease;
+}
+
+.iconos a:hover {
+    transform: scale(1.2);
+    color: #ff4500; /* Cambia a un color llamativo */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: start;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 400px; /* Ajusta esto si quieres un tamaño más uniforme */
+}
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-left: 1px;
+    justify-content:center; /* Centra los botones horizontalmente */
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}   
+ #submit, #reset{  
+    background-color: #6c757d; /* Color inicial */
+    border-color: white;
+    border-radius: 5px;
+    border: 1px solid #6c757d; /* Agrega borde dorado para más visibilidad */
+}
+#submit:hover, #reset:hover{
+    color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 1px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+    transform: scale(1.05);
+}   
+
+section{
+    display:flex;
+    margin-left: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center;
+}
+
+section a img {
+    width: clamp(50px, 15vw, 120px); /* Ajusta entre 50px y 120px según el ancho de pantalla */
+    max-width: 130px; /* Límite máximo para evitar que se agranden demasiado */
+    min-width: 80px; /* Límite mínimo para que no sean microscópicos */
+    margin: 0 20px;
+}
+.card  {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    max-width: 250px; /* Pero evita que sean demasiado anchas */
+    margin: auto;
+    align-items: center;
+    
+}
+
+.card:hover {
+    transform: scale(1.1); /* Aumenta un 10% al pasar el mouse */
+    border-color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+}
+.btn-secondary {
+    background-color: #6c757d; /* Color inicial */
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #6c757d; /* Agrega borde dorado para más visibilidad */
+    
+}
+
+.btn-secondary:hover {
+    /*background-color: rgba(255, 255, 255, 0.1); /* Efecto semitransparente */
+    color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+}
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 100px;
+    place-items: center; 
+    padding: 20px; 
+    
+}
+
+.itemgr {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #e1e2e2;
+    border-radius: 5%;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+.itemgr:hover {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #e1e2e2;
+    border-radius: 5%;
+    transform: scale(1.1); /* Aumenta un 10% al pasar el mouse */
+    border-color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+}    
+.itemgr button{
+    margin-bottom: 10px;
+    background-color: #6c757d; /* Color inicial */
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #6c757d; /* Agrega borde dorado para más visibilidad */
+    
+}
+.itemgr button:hover{
+    color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+}    
