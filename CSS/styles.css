@@ -1,9 +1,10 @@
+/*ddddd*/
 
 body {
     font-size: 14px; 
     font-family: "Roboto", sans-serif;
     color: black;
-    margin: 0px;
+    margin: 1px;
 }
 
 .productos {
@@ -62,6 +63,9 @@ header{
     
 }
 @media screen and (max-width: 768px) {
+    header{
+        top:auto;
+    }
     .header-content {
         flex-direction: column;
     }
@@ -239,6 +243,7 @@ main{
     background-repeat:no-repeat;
     background-size: cover;
     align-items: center;
+    text-align: center;
     width: 100vw;
 }
 
@@ -253,6 +258,7 @@ main{
 
 .item{
     border: 2px solid rgb(180, 179, 179);
+    border-radius: 10px;
     padding: 10px;
     height:auto;
     margin-top:10px;
@@ -260,8 +266,17 @@ main{
     transition: transform 0.6s ease, color 0.3s ease;
     text-align: center;
     max-width: 300px;
+    background-color:rgba(160, 157, 157, 0.5);
 
 }
+
+.rating {
+    font-size: 20px;
+    color: #FFD700; /* Amarillo dorado */
+    margin-bottom: 5px;
+    border-color: #6c757d;
+}
+
 .item:hover{
     border-color: #FFD700; /* Cambia a dorado como los enlaces */
     border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
