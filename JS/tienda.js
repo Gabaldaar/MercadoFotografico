@@ -9,6 +9,13 @@ let botonesEliminar = document.getElementsByClassName('eliminar');
      botonesEliminar[i].addEventListener('click', eliminarProducto);
    }
 
+const contador = document.getElementById('contador-carrito');
+contador.textContent = carrito.length === 0
+  ? "🛒 Tu carrito está vacío"
+  : `${carrito.length} ${carrito.length === 1 ? 'producto' : 'productos'}`;
+
+// Cambia el estilo si está vacío
+contador.classList.toggle('vacio', carrito.length === 0);
 
 
 // Vacía carrito
@@ -131,10 +138,30 @@ function cargarCarrito() {
         //total += parseFloat(producto.precio) || 0;
         total += parseFloat(producto.precio) * producto.cantidad;
 
+  
     }
     // Mostrar el total redondeado a 3 decimales
     //totalCarrito.textContent = total.toFixed(3);
     animarContador(totalCarrito, total);
+        //document.getElementById('contador-carrito').textContent =
+         //`${carrito.length} ${carrito.length === 1 ? 'producto' : 'productos'}`;
+
+    // 🔁 Calcular unidades reales
+    let unidadesTotales = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+
+    const contadorCarrito = document.getElementById('contador-carrito');
+
+    contadorCarrito.textContent = unidadesTotales === 0
+  ? "🛒 Tu carrito está vacío"
+  : `${carrito.length} ${carrito.length === 1 ? "producto" : "productos"}`;
+
+// 🎨 Aplicar estilo visual para estado vacío
+contadorCarrito.classList.toggle("vacio", unidadesTotales === 0);
+
+         document.getElementById('contador-carrito').textContent =
+  carrito.length === 0 
+    ? "🛒 Tu carrito está vacío"
+    : `${carrito.length} ${carrito.length === 1 ? 'producto' : 'productos'}`;
 
 
     

@@ -649,3 +649,27 @@ button.eliminar:hover {
   margin-right: 8px;
   color: #09af40;
 }
+
+#carrito-resumen {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.contador-estilo {
+  background-color: #3498db;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.contador-estilo.vacio {
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
