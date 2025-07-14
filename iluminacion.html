@@ -43,8 +43,14 @@ ss/all.min.css">
     </header>
 
     <div id="carrito">
-        <h5>Tu Carrito de Compras</h5>
-        <p>Total: <span id="total-carrito">0</span></p>
+        <h5 id="titulo-carrito">
+            <i class="fa-solid fa-cart-shopping"></i> Tu Carrito de Compras
+        </h5>
+        
+        <p id="carrito-total-label">
+            Total: <span id="total-carrito" class="badge-total">$0,00</span>
+        </p>
+        
         <ul id="lista-carrito"></ul>
         <button class="pagar" id="btnPagar">Ir a Pagar</button>
         <button class="vaciar" id="vaciar-carrito">Vaciar Carrito</button>

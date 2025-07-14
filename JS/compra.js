@@ -53,9 +53,11 @@ resumenTablaHTML += `
     </tfoot>
   </table>
 `;
+
 resumenDiv.innerHTML = resumenTablaHTML;
 
    //Fin Tabla 
+
 
     function enviarFormulario(event) {
         event.preventDefault();

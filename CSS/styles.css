@@ -611,3 +611,41 @@ button.eliminar:hover {
   z-index: 1000;
   transition: opacity 0.4s ease;
 }
+
+.badge-total {
+  display: inline-block;
+  background-color: #09af40;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.4s ease;
+}
+
+.badge-total.actualizado {
+  transform: scale(1.1);
+  background-color: #27ae60;
+}
+
+#titulo-carrito {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+#titulo-carrito:hover {
+  background-color: #dfe6e9;
+}
+
+#titulo-carrito i {
+  margin-right: 8px;
+  color: #09af40;
+}
