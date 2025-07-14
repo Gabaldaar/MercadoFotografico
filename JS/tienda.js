@@ -186,7 +186,7 @@ for (let i = 0; i < carrito.length; i++) {
     sessionStorage.setItem('total', total);
 
     //alert(`Total a pagar: $${total.toFixed(3)}`);
-    alert(`Total a pagar: ${formatoPesos(total)}`);
+    //alert(`Total a pagar: ${formatoPesos(total)}`);
     window.location.href = "compra.html";
 }
 

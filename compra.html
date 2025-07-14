@@ -48,16 +48,21 @@ ss/all.min.css">
     <main>
          <br> 
         <section>
+            
             <div id="detalle"></div>
+            <p id="cantidad-articulos" class="resumen-articulos">Artículos en tu compra: <strong>0</strong></p>
+
+
         </section>
             
             <form id="formulario" action="https://formspree.io/f/xpwlallb" method="POST">
                 <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
                 <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
                 <br>
+             
                 <h6>Gracias por tu compra.</h6>
                 <h6> Completá el formulario y te enviamos los pasos a seguir.</h6>
-                <hr>
+    
                 <label align="left">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
                 <label align="left">Email:</label>

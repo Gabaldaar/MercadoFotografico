@@ -101,3 +101,14 @@ function formatoPesos(numero) {
     maximumFractionDigits: 2
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+  const unidades = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+
+  const resumenCantidad = document.getElementById('cantidad-articulos');
+  if (resumenCantidad) {
+    resumenCantidad.innerHTML = `Artículos en tu compra: <strong>${unidades}</strong>`;
+  }
+});
