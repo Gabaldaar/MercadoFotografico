@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,11 @@
 ss/all.min.css">
     <title>Cámaras Fotográficas</title>
 </head>
+    <div id="mensaje-carrito" style="position:fixed; top:20px; right:20px; background:#2ecc71; color:black; padding:8px 12px; border-radius:5px; display:none; box-shadow:0px 0px 5px #999;">
+  <!-- Mensaje dinámico -->
+</div>
 <body>
+
     <header>
         <div class="header-content">
             <div class="logo">
@@ -47,6 +52,8 @@ ss/all.min.css">
         <button class="vaciar" id="vaciar-carrito">Vaciar Carrito</button>
         <br>
     </div>
+
+
     <main>
         <div class="productos">
     
@@ -59,8 +66,8 @@ ss/all.min.css">
                         <p class="card-text">Precio= $580.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="9" data-nombre="Canon T1000" data-precio="580000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="9" >Quitar del Carrito</button>
+                        <br>
+                        
                     </div>
                 </div>
                 </div>
@@ -73,8 +80,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $270.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="10" data-nombre="Lente Nikon 85mm" data-precio="270000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="10" >Quitar del Carrito</button>
+                        <br>
                     </div>
                     </div>
                 </div>
@@ -86,8 +92,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $120.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="11" data-nombre="Grip p/Canon" data-precio="120000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="11" >Quitar del Carrito</button>                    
+                        <br>                  
                     </div>
                     </div>
                 </div>
@@ -99,8 +104,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $95.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="12" data-nombre="Lente Nikon 55mm" data-precio="95000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="12" >Quitar del Carrito</button>                    
+                        <br>                
                     </div>
                     </div>
                 </div>
@@ -112,8 +116,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $1.150.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="13" data-nombre="Nikon Mirrorless" data-precio="1150000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="13" >Quitar del Carrito</button>                    
+                        <br>                
                     </div>
                     </div>
                 </div>
@@ -125,8 +128,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $1.470.000</p>
                         <p class="card-text">Ver características</p>
                         <button class="comprar" data-id="14" data-nombre="Sony Alfa 7" data-precio="1470000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="14" >Quitar del Carrito</button>                        
+                        <br>                      
                     </div>
                     </div>
                 </div>
@@ -138,8 +140,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $195.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="15" data-nombre="Sigma 18-85 p/Canon" data-precio="195000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="15" >Quitar del Carrito</button>                    
+                        <br>            
                     </div>
                     </div>
                 </div>
@@ -151,8 +152,7 @@ ss/all.min.css">
                         <p class="card-text">Precio= $65.000</p>
                         <p class="card-text">Ver características</p>
                         <button  class="comprar" data-id="16" data-nombre="C.Remoto p/Canon" data-precio="65000">Agregar al Carrito</button>
-                        <br><br>
-                        <button  class="eliminar" data-id="16" >Quitar del Carrito</button>                    
+                        <br>            
                     </div>
                     </div>
                 </div>
@@ -165,8 +165,9 @@ ss/all.min.css">
             
             <br>
             <a href="https://www.cla.canon.com/cla/en/home" target="_blank">
-                <img src="https://www.cla.canon.com/sys/images/canon_main_logo.gif" width="12%">
+                <img src="./img/canon.jpg" width="12%">
             </a>
+            <br>
             <a href="https://www.nikon.com.ar/" target="_blank">
                 <img src="https://www.nikon.com.ar/assets/images/master/logo-h.svg" width="5%">
             </a>

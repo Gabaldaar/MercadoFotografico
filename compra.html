@@ -41,36 +41,37 @@ ss/all.min.css">
         
     </header>
 <body>
+  
 
-    <h1>Resumen de la compra</h1>
+<div class="formcontact">
+  
     <main>
+         <br> 
         <section>
             <div id="detalle"></div>
         </section>
+
+            <form id="formulario" action="https://formspree.io/f/xpwlallb" method="POST">
+                <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+                <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+                
+                <hr>
+                <label align="left">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <label align="left">Email:</label>
+                <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
+                <label align="left">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                <br>
+                <div class="botones">
+                    <input type="submit" name="Submit" id="botonEnviar" value="Confirmar Compra">
+                    <input type="reset" name="Reset" id="reset" value="Restablecer">
+                </div>
+                <br>
+
+            </form>
+    </div>        
     </main>
-
-    
-
-    <form id="formulario" action="https://formspree.io/f/xpwlallb" method="POST">
-        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
-        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
-        <br>
-        <hr>
-        <label>Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-        <label>Email:</label>
-        <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
-        <label>Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
-        <br><br>
-        <div class="botones">
-            <input type="submit" name="Submit" id="botonEnviar" placeholder="Confirmar Compra">
-            <input type="reset" name="Reset" id="reset" placeholder="Restablecer">
-         </div>
-         <br>
-
-    </form>
-
     <script src="./JS/compra.js"></script>
 
 </body>

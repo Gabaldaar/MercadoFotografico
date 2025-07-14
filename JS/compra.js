@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const resumenDiv = document.getElementById("detalle");
 
-    let resumenTextoHTML = "<h3>Resumen de tu Compra:</h3><br>";
+    let resumenTextoHTML = "<h3 style=color:black>Resumen de tu Compra:</h3><br>";
 
     for (let i = 0; i < productos.length; i++) {
         const productoActual = productos[i]; 

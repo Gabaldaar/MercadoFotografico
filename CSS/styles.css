@@ -283,6 +283,25 @@ main{
     transform: scale(1.05);
 }
 
+.resenia{
+    border: 2px solid rgb(180, 179, 179);
+    border-radius: 10px;
+    padding: 10px;
+    height:auto;
+    margin: 10px auto;
+    transition: transform 0.6s ease, color 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+    background-color:rgba(160, 157, 157, 0.5);
+
+}
+
+.resenia:hover{
+    border-color: #FFD700; /* Cambia a dorado como los enlaces */
+    border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
+    transform: scale(1.05);
+}
+
 footer{
     align-items:center;
     width: 100vw;
@@ -379,7 +398,8 @@ form textarea {
     gap: 10px;
     margin-left: 1px;
     justify-content:center; /* Centra los botones horizontalmente */
-    width: 100%;
+    width:fit-content;
+    
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }   
@@ -545,3 +565,49 @@ section a img {
     color: #FFD700; /* Cambia a dorado como los enlaces */
     border: 2px solid #FFD700; /* Agrega borde dorado para más visibilidad */
 }    
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 5px;
+  margin-bottom: 4px;
+}
+
+/* Botón eliminar */
+button.eliminar {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button.eliminar:hover {
+  background-color: #c0392b;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+#mensaje-carrito {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #2ecc71;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: none;
+  opacity: 0;
+  box-shadow: 0px 0px 5px #999;
+  z-index: 1000;
+  transition: opacity 0.4s ease;
+}
