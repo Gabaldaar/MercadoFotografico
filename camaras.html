@@ -39,94 +39,129 @@ ss/all.min.css">
         </div>       
         
     </header>
+
+    <div id="carrito">
+        <h5>Tu Carrito de Compras</h5>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <ul id="lista-carrito"></ul>
+        <button class="pagar" id="btnPagar">Ir a Pagar</button>
+        <button class="vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+        <br>
+    </div>
     <main>
         <div class="productos">
     
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/CanonT1000.jpg" class="card-img-top" alt="Vista posterior del flash" height="autoplay">
+                    <img src="./img/CanonT1000.jpg" class="card-img-top" alt="Camara Canon T1000" height="autoplay">
                     <div class="card-body">
                         <h5 class="card-title">Canon T1000</h5>
+                        <p class="card-text">Precio= $580.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
-                    </div>
+                        <button  class="comprar" data-id="9" data-nombre="Canon T1000" data-precio="580000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="9" >Quitar del Carrito</button>
                     </div>
                 </div>
+                </div>
+                
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/nokon85.jpg" class="card-img-top" alt="imagen de flash de estudio" >
+                    <img src="./img/nokon85.jpg" class="card-img-top" alt="Lente Nikon 85mm" >
                     <div class="card-body">
                         <h5 class="card-title">Lente Nikon 85mm</h5>
+                        <p class="card-text">Precio= $270.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="10" data-nombre="Lente Nikon 85mm" data-precio="270000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="10" >Quitar del Carrito</button>
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/GripCanon.jpg" class="card-img-top" alt="Kit de flash">
+                    <img src="./img/GripCanon.jpg" class="card-img-top" alt="Grip Para cámaras Canon">
                     <div class="card-body">
                         <h5 class="card-title">Grip p/Canon</h5>
+                        <p class="card-text">Precio= $120.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="11" data-nombre="Grip p/Canon" data-precio="120000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="11" >Quitar del Carrito</button>                    
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/nokon85.jpg" class="card-img-top" alt="Vista posterior del flash">
+                    <img src="./img/nokon85.jpg" class="card-img-top" alt="Lente Nikon 55mm">
                     <div class="card-body">
-                        <h5 class="card-title">Lente Nikon 85mm</h5>
+                        <h5 class="card-title">Lente Nikon 55mm</h5>
+                        <p class="card-text">Precio= $95.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="12" data-nombre="Lente Nikon 55mm" data-precio="95000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="12" >Quitar del Carrito</button>                    
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/NikonMirror.jpg" class="card-img-top" alt="Vista posterior del flash">
+                    <img src="./img/NikonMirror.jpg" class="card-img-top" alt="Cámara Nikon Mirrorless">
                     <div class="card-body">
                         <h5 class="card-title">Nikon Mirrorless</h5>
+                        <p class="card-text">Precio= $1.150.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="13" data-nombre="Nikon Mirrorless" data-precio="1150000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="13" >Quitar del Carrito</button>                    
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/SonyA7.jpg" class="card-img-top" alt="Vista posterior del flash">
+                    <img src="./img/SonyA7.jpg" class="card-img-top" alt="Cámar Sony Alfa 7">
                     <div class="card-body">
                         <h5 class="card-title">Sony Alfa 7</h5>
+                        <p class="card-text">Precio= $1.470.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button class="comprar" data-id="14" data-nombre="Sony Alfa 7" data-precio="1470000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="14" >Quitar del Carrito</button>                        
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/sigma18-85.jpg" class="card-img-top" alt="Vista posterior del flash">
+                    <img src="./img/sigma18-85.jpg" class="card-img-top" alt="Lente Sogms 18-55 para Canon">
                     <div class="card-body">
                         <h5 class="card-title">Sigma 18-85 p/Canon</h5>
+                        <p class="card-text">Precio= $195.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="15" data-nombre="Sigma 18-85 p/Canon" data-precio="195000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="15" >Quitar del Carrito</button>                    
                     </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-60" >
-                    <img src="./img/remoto.jpg" class="card-img-top" alt="Vista posterior del flash">
+                    <img src="./img/remoto.jpg" class="card-img-top" alt="Control Infrarrojo para Canon">
                     <div class="card-body">
                         <h5 class="card-title">C.Remoto p/Canon</h5>
+                        <p class="card-text">Precio= $65.000</p>
                         <p class="card-text">Ver características</p>
-                        <button type="button" class="btn btn-secondary">Agregar al carrito</button>
+                        <button  class="comprar" data-id="16" data-nombre="C.Remoto p/Canon" data-precio="65000">Agregar al Carrito</button>
+                        <br><br>
+                        <button  class="eliminar" data-id="16" >Quitar del Carrito</button>                    
                     </div>
                     </div>
                 </div>
                 </div>
             </div>        
             <hr>
-           
+            
+
         <section>
             
             <br>
@@ -140,7 +175,7 @@ ss/all.min.css">
         </section>
        
     </main>
-
+  
     <footer>
           <div class="content">
             <div class="pfooter">
@@ -159,9 +194,6 @@ ss/all.min.css">
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>   
-</body>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> 
+    <script src="./js/tienda.js"></script>
 </html>

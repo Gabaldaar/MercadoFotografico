@@ -41,62 +41,95 @@ ss/all.min.css">
         </div>       
         
     </header>
+
+    <div id="carrito">
+        <h5>Tu Carrito de Compras</h5>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <button class="pagar" id="btnPagar">Ir a Pagar</button>
+        <button class="vaciar" id="vaciar-carrito">Vaciar Carrito</button>
+        <ul id="lista-carrito"></ul>
+    </div>
         <main>
         <div class="grilla">
             <div class="itemgr">
                 <h5>Kit completo Godox</h5>
-                <img src="./img/flash-estudio.jpg" width="80%">
+                <img src="./img/flash-estudio.jpg" width="80%" alt="Kit completo Godox">
+                <p class="card-text">Precio= $235.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="1" data-nombre="Kit completo Godox" data-precio="235000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="1" >Quitar del Carrito</button>            
             </div>
             <div class="itemgr">
                 <h5>Flash SK300</h5>
-                <img src="./img/kit-flash-estudio-godox_2-1.jpg" width="80%">
+                <img src="./img/kit-flash-estudio-godox_2-1.jpg" width="80%" alt="Flash de estudio SK300">
+                <p class="card-text">Precio= $175.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="2" data-nombre="Flash SK300" data-precio="175000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="2" >Quitar del Carrito</button>
             </div>
             <div class="itemgr">
                 <h5>Pie de iluminación</h5>
-                <img src="./img/pieiluminacion.jpg" width="80%">
+                <img src="./img/pieiluminacion.jpg" width="80%" alt="Pié de iluminación">
+                <p class="card-text">Precio= $150.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="3" data-nombre="Pie de iluminación" data-precio="150000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="3" >Quitar del Carrito</button>            
             </div>
 
 
 
             <div class="itemgr">
                 <h5>Flash Visico 300W</h5>
-                <img src="./img/flashvisico300.jpg" width="80%">
+                <img src="./img/flashvisico300.jpg" width="80%" alt="Flash Visico 300W">
+                <p class="card-text">Precio= $190.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="4" data-nombre="Flash Visico 300W" data-precio="190000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="4" >Quitar del Carrito</button>
             </div>
             <div class="itemgr">
                 <h5>Jirafa c/contrapeso</h5>
-                <img src="./img/jirafa.jpg" width="80%">
+                <img src="./img/jirafa.jpg" width="80%" alt="Jirafa con contrapeso">
+                <p class="card-text">Precio= $190.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="5" data-nombre="Jirafa c/contrapeso" data-precio="190000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="5" >Quitar del Carrito</button>
             </div>
             <div class="itemgr">
                 <h5>Reflector 5:1 2m</h5>
-                <img src="./img/reflector51gde.jpg" width="80%">
+                <img src="./img/reflector51gde.jpg" width="80%" alt="Reflector 5:1 2m  ">
+                <p class="card-text">Precio= $75.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="6" data-nombre="Reflector 5:1 2m" data-precio="75000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="6" >Quitar del Carrito</button>
             </div>
             <div class="itemgr">
                 <h5>Paraguas traslúcido</h5>
-                <img src="./img/paraguas.jpg" width="80%">
+                <img src="./img/paraguas.jpg" width="80%" alt="Paragüas traslúcido">
+                <p class="card-text">Precio= $30.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="7" data-nombre="Paraguas traslúcido" data-precio="30000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="7" >Quitar del Carrito</button>
             </div>
             <div class="itemgr">
                 <h5>Octabox 150cm</h5>
-                <img src="./img/octabox.jpg" width="80%">
+                <img src="./img/octabox.jpg" width="80%" alt="Octabox 150cm">
+                <p class="card-text">Precio= $120.000</p>
                 <p class="card-text">Ver características</p>
-                <button>Agregar al carrito</button>
+                <button class="comprar" data-id="8" data-nombre="Octabox 150cm" data-precio="120000">Agregar al Carrito</button>
+                
+                <button  class="eliminar" data-id="8" >Quitar del Carrito</button>
             </div>
         </div>
         <br>
         <hr>  
+
         <section>
             <h5>¿No sabés cómo usar tu nuevo flash? Mirá este video</h5>
             <div class="video-container">
@@ -122,6 +155,7 @@ ss/all.min.css">
                 </a>
             </div>
         </div>
-    </footer>       
+    </footer>     
+    <script src="./js/tienda.js"></script>  
 </body> 
 </html>
