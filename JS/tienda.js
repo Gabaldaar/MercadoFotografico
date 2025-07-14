@@ -87,6 +87,16 @@ function eliminarProducto(event) {
     }
 }
 
+function formatoPesos(numero) {
+
+  const valor = parseFloat(numero);
+  if (isNaN(valor)) return "$0,00";
+  return "$" + valor.toLocaleString("es-AR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+}
+
 function cargarCarrito() {
     let listaCarrito = document.getElementById('lista-carrito');
     let totalCarrito = document.getElementById('total-carrito');
@@ -101,7 +111,9 @@ function cargarCarrito() {
         // Crear item del carrito
         let li = document.createElement('li');
         //li.textContent = producto.nombre + ' - $' + producto.precio;
-        li.textContent = `${producto.nombre} - $${producto.precio} x${producto.cantidad}`;
+        //li.textContent = `${producto.nombre} - $${producto.precio} x${producto.cantidad}`;
+        li.textContent = `${producto.nombre} - ${formatoPesos(producto.precio)} x${producto.cantidad}`;
+
 
         // Crear botón de eliminar
         let btnEliminar = document.createElement('button');
@@ -136,16 +148,18 @@ function pagar() {
         return;
     }
 
-    let total = 0;
-    for (let i = 0; i < carrito.length; i++) {
-        total += parseFloat(carrito[i].precio) || 0;
-    }
+  let total = 0;
+for (let i = 0; i < carrito.length; i++) {
+    total += parseFloat(carrito[i].precio) * carrito[i].cantidad || 0;
+}
 
     // Guardar datos en sessionStorage
     sessionStorage.setItem('productos', JSON.stringify(carrito));
-    sessionStorage.setItem('total', total.toFixed(3));
+    //sessionStorage.setItem('total', total.toFixed(3));
+    sessionStorage.setItem('total', total);
 
-    alert(`Total a pagar: $${total.toFixed(3)}`);
+    //alert(`Total a pagar: $${total.toFixed(3)}`);
+    alert(`Total a pagar: ${formatoPesos(total)}`);
     window.location.href = "compra.html";
 }
 
@@ -172,6 +186,8 @@ function mostrarMensaje(texto) {
 
 function animarContador(elemento, valorFinal) {
     let valorActual = parseFloat(elemento.textContent) || 0;
+    
+
     let incremento = (valorFinal - valorActual) / 30;
     let contador = 0;
 
@@ -181,10 +197,15 @@ function animarContador(elemento, valorFinal) {
 
         // Frenar cuando se llega al paso final
         if (contador >= 30) {
-            elemento.textContent = valorFinal.toFixed(3);
+            //elemento.textContent = valorFinal.toFixed(3);
+            elemento.textContent = formatoPesos(valorFinal);
             clearInterval(animacion);
         } else {
-            elemento.textContent = valorActual.toFixed(3);
+            //elemento.textContent = valorActual.toFixed(3);
+            // Formatear el valor actual como pesos con dos decimales
+            elemento.textContent = formatoPesos(valorActual);
+            
         }
     }, 15); // velocidad de animación (ms por paso)
 }
+
