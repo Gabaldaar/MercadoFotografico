@@ -673,3 +673,29 @@ button.eliminar:hover {
   border-radius: 6px;
   font-weight: bold;
 }
+
+.ver-caracteristicas {
+  color: #2980b9;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.caracteristicas {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease;
+  background-color: #f4f4f4;
+  padding: 0 15px;
+  border-left: 3px solid #FFD700;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  padding-left: 15px;         
+  text-align: left; 
+}
+
+.caracteristicas.activa {
+  padding: 10px 15px;
+  max-height: 300px; /* ajustá según el contenido */
+  text-align: left;
+}

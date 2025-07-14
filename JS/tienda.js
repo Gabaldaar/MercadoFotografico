@@ -236,3 +236,14 @@ function animarContador(elemento, valorFinal) {
     }, 15); // velocidad de animación (ms por paso)
 }
 
+document.querySelectorAll('.ver-caracteristicas').forEach(elemento => {
+  elemento.addEventListener('click', function () {
+    const id = this.dataset.id;
+    const panel = document.getElementById('carac-' + id);
+    if (panel) {
+      panel.classList.toggle('activa');
+      // 🔁 Cambiar el texto según estado
+      this.textContent = panel.classList.contains('activa') ? '− info...' : '+ info...';
+    }
+  });
+});
