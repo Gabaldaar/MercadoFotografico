@@ -706,3 +706,25 @@ button.eliminar:hover {
   max-height: 300px; /* ajustá según el contenido */
   text-align: left;
 }
+
+.item:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+    background: #d2d3d4;
+}       
+
+.card:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+    background: #d2d3d4;
+}
+
+.itemgr:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 2px;
+    background: #d2d3d4;
+}
+.ver-caracteristicas:focus {
+    outline: 2px solid #FFD700;
+    background: #f0f8ff;
+}
